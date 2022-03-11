@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "skiptransitions",
+  "version": "${version}",
+
+  "name": "Skip Transitions",
+  "description": "Skip the transitions to title screen and from changing resources.",
+  "authors": [
+    "Me!"
+  ],
+  "contact": {
+    "homepage": "https://github.com/trufflezmc/trufflez-arcanum/",
+    "issues": "https://github.com/trufflezmc/trufflez-arcanum/issues",
+    "sources": "https://github.com/trufflezmc/trufflez-arcanum/"
+  },
+
+  "license": "GNU Lesser General Public License version 3 (LGPLv3)",
+  "icon": "assets/skiptransitions/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.trufflez.skiptransitions.SkipTransitions"
+    ]
+  },
+  "mixins": [
+    "skiptransitions.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  }
+}
