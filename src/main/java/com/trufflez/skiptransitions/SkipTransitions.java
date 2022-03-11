@@ -7,9 +7,9 @@ import org.slf4j.LoggerFactory;
 public class SkipTransitions implements ModInitializer {
 	public static final String MODID = "skiptransitions";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MODID);
-
+	
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Trufflez' SkipTransitions loaded.");
+		LOGGER.info("Skip Transitions loaded.");
 	}
 }

@@ -6,7 +6,8 @@
   "mixins": [
   ],
   "client": [
-    "TsMixins"
+    "TitleScreenMixin",
+    "SplashOverlayMixin"
   ],
   "injectors": {
     "defaultRequire": 1
