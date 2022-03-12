@@ -1,12 +1,15 @@
 # Skip Transitions
-### by TrufflezMC
 
 **Removes the following intrusive transitions:**
 - Title screen buttons fade in, which prevents them from being clicked
-- Mojang splash screen fade out, which temporarily freezes whatever screen you were on
+- Mojang logo fades out on top of other menus, freezing them temporarily
 
-While not strictly necessary, also removes these transitions:
-- Mojang splash screen fade in after loading the game or applying resource packs
+**Also removes the following cosmetic transitions:**
+- Mojang logo fade in when applying resourcepack changes (now a cut)
+- Toast notification slide in/slide out
+  - The associated "whoosh" sound effect
+
+All changes are configurable.
 
 ### Links
 

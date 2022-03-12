@@ -1,6 +1,6 @@
 package com.trufflez.skiptransitions.mixin;
 
-import com.trufflez.skiptransitions.SkipTransitions;
+import com.trufflez.skiptransitions.config.Configs;
 import net.minecraft.client.gui.screen.TitleScreen;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
@@ -15,7 +15,7 @@ public class TitleScreenMixin {
     /*
     
     Title screen
-    - buttons fade in
+    - background fades in
     
      */
 	
@@ -24,9 +24,8 @@ public class TitleScreenMixin {
 
 	@Inject(at = @At("HEAD"), method = "init()V")
 	private void init(CallbackInfo ci) {
-		
-		this.doBackgroundFade = false;
-		
-		SkipTransitions.LOGGER.debug("Title screen mixin injected");
+		if(Configs.REMOVE_TITLE_SCREEN_FADE) {
+			this.doBackgroundFade = false;
+		}
 	}
 }
