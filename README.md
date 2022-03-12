@@ -7,7 +7,7 @@
 
 While not strictly necessary, also removes these transitions:
 - Mojang splash screen fade in after loading the game or applying resource packs
-- 
+
 ### Links
 
 - Modrinth: https://modrinth.com/mod/skip-transitions
