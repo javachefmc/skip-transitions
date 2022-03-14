@@ -14,3 +14,4 @@ All changes are configurable.
 ### Links
 
 - Modrinth: https://modrinth.com/mod/skip-transitions
+- CurseForge: https://www.curseforge.com/minecraft/mc-mods/skip-transitions
