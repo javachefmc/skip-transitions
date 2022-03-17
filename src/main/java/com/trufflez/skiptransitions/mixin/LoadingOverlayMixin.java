@@ -10,7 +10,6 @@ import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.ModifyVariable;
-import org.spongepowered.asm.mixin.injection.Redirect;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(LoadingOverlay.class)
@@ -44,7 +43,7 @@ public class LoadingOverlayMixin {
 		} else return value;
 	}
 
-	@ModifyVariable(method = "render", at = @At("STORE"), name = "o")
+	@ModifyVariable(method = "render", at = @At("STORE"), ordinal = 3)
 	private float o(float value) {
 		if(Configs.REMOVE_SPLASH_FADE) {
 			return 1.0f; // This parameter is used for the Mojang logo transparency
