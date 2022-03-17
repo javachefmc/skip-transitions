@@ -1,7 +1,7 @@
 package com.trufflez.skiptransitions.mixin;
 
 import com.trufflez.skiptransitions.config.Configs;
-import net.minecraft.client.gui.screen.TitleScreen;
+import net.minecraft.client.gui.screens.TitleScreen;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Mutable;
@@ -20,12 +20,12 @@ public class TitleScreenMixin {
      */
 	
 	@Mutable
-	@Shadow @Final private boolean doBackgroundFade;
+	@Shadow @Final private boolean fading;
 
 	@Inject(at = @At("HEAD"), method = "init()V")
 	private void init(CallbackInfo ci) {
 		if(Configs.REMOVE_TITLE_SCREEN_FADE) {
-			this.doBackgroundFade = false;
+			this.fading = false;
 		}
 	}
 }

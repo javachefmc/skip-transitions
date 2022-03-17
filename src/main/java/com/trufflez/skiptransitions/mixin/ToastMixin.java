@@ -1,14 +1,13 @@
 package com.trufflez.skiptransitions.mixin;
 
 import com.trufflez.skiptransitions.config.Configs;
-import net.minecraft.client.sound.SoundManager;
+import net.minecraft.client.sounds.SoundManager;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-@Mixin(targets = "net.minecraft.client.toast.Toast$Visibility")
+@Mixin(targets = "net.minecraft.client.gui.components.toasts.Toast$Visibility")
 public class ToastMixin {
     /*
     

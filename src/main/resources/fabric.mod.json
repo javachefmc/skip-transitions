@@ -4,7 +4,7 @@
   "version": "${version}",
 
   "name": "Skip Transitions",
-  "description": "Skip the transitions to title screen and from changing resources.",
+  "description": "Removes transitions when starting, changing resources, and more",
   "authors": [
     "TrufflezMC"
   ],

@@ -6,9 +6,9 @@
   "mixins": [
   ],
   "client": [
-    "SplashOverlayMixin",
+    "LoadingOverlayMixin",
     "TitleScreenMixin",
-    "ToastManagerMixin",
+    "ToastComponentMixin",
     "ToastMixin"
   ],
   "injectors": {
