@@ -3,8 +3,6 @@
   "minVersion": "0.8",
   "package": "com.trufflez.skiptransitions.mixin",
   "compatibilityLevel": "JAVA_17",
-  "mixins": [
-  ],
   "client": [
     "LoadingOverlayMixin",
     "TitleScreenMixin",

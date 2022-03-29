@@ -22,7 +22,7 @@ public class TitleScreenMixin {
 	@Mutable
 	@Shadow @Final private boolean fading;
 
-	@Inject(at = @At("HEAD"), method = "init()V")
+	@Inject(at = @At("TAIL"), method = "init()V")
 	private void init(CallbackInfo ci) {
 		if(Configs.REMOVE_TITLE_SCREEN_FADE) {
 			this.fading = false;

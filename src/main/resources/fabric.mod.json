@@ -2,7 +2,6 @@
   "schemaVersion": 1,
   "id": "skiptransitions",
   "version": "${version}",
-
   "name": "Skip Transitions",
   "description": "Removes transitions when starting, changing resources, and more",
   "authors": [
@@ -13,24 +12,21 @@
     "issues": "https://github.com/trufflezmc/skip-transitions/issues",
     "sources": "https://github.com/trufflezmc/skip-transitions/"
   },
-
   "license": "GNU Lesser General Public License version 3 (LGPLv3)",
   "icon": "assets/skiptransitions/icon.png",
-
-  "environment": "*",
+  "environment": "client",
   "entrypoints": {
-    "main": [
+    "client": [
       "com.trufflez.skiptransitions.SkipTransitions"
     ]
   },
   "mixins": [
     "skiptransitions.mixins.json"
   ],
-
   "depends": {
     "fabricloader": ">=0.13.3",
     "fabric": "*",
-    "minecraft": "1.18.x",
+    "minecraft": ">=1.18",
     "java": ">=17"
   }
 }
