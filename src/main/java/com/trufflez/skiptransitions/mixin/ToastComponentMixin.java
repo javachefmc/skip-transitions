@@ -1,6 +1,6 @@
 package com.trufflez.skiptransitions.mixin;
 
-import com.trufflez.skiptransitions.config.Configs;
+import com.trufflez.skiptransitions.config.ModConfig;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -17,7 +17,7 @@ public class ToastComponentMixin {
 	
 	@Inject(method = "getVisibility", at = @At("HEAD"), cancellable = true)
 	public void getVisibility(CallbackInfoReturnable<Float> cir) {
-		if(Configs.REMOVE_TOASTS_SLIDE) {
+		if(ModConfig.INSTANCE.removeToastsSlide) {
 			cir.setReturnValue(1.0F);
 		}
 	}

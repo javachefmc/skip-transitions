@@ -1,6 +1,6 @@
 package com.trufflez.skiptransitions.mixin;
 
-import com.trufflez.skiptransitions.config.Configs;
+import com.trufflez.skiptransitions.config.ModConfig;
 import net.minecraft.client.sounds.SoundManager;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -18,7 +18,7 @@ public class ToastMixin {
 	
 	@Inject(method = "playSound", at = @At("HEAD"), cancellable = true)
 	public void playSound(SoundManager soundManager, CallbackInfo ci) {
-		if(Configs.REMOVE_TOASTS_SOUND_EFFECT) {
+		if(ModConfig.INSTANCE.removeToastsSFX) {
 			ci.cancel();
 		}
 	}

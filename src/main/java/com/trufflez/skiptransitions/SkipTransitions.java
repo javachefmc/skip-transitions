@@ -1,11 +1,12 @@
 package com.trufflez.skiptransitions;
 
-import com.trufflez.skiptransitions.config.Configs;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import com.trufflez.skiptransitions.config.ModConfig;
 
 @Environment(EnvType.CLIENT)
 public class SkipTransitions implements ClientModInitializer {
@@ -14,7 +15,7 @@ public class SkipTransitions implements ClientModInitializer {
 	
 	@Override
 	public void onInitializeClient() {
-		Configs.init();
+		ModConfig.init();
 		LOGGER.info("Skip Transitions loaded.");
 	}
 }

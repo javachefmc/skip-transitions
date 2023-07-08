@@ -1,0 +1,8 @@
+{
+    "text.autoconfig.skiptransitions.title": "Skip Transitions",
+
+    "text.autoconfig.skiptransitions.option.removeTitleScreenFade": "Remove fade animations on the title screen",
+    "text.autoconfig.skiptransitions.option.removeSplashFade": "Remove fade animation for Mojang logo when applying resourcepack changes",
+    "text.autoconfig.skiptransitions.option.removeToastsSlide": "Remove slide animation for advancements, recipes, etc",
+    "text.autoconfig.skiptransitions.option.removeToastsSFX": "Remove the associated \"whoosh\" sound effect"
+}

@@ -1,6 +1,6 @@
 package com.trufflez.skiptransitions.mixin;
 
-import com.trufflez.skiptransitions.config.Configs;
+import com.trufflez.skiptransitions.config.ModConfig;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.LoadingOverlay;
 import org.spongepowered.asm.mixin.Final;
@@ -29,7 +29,7 @@ public class LoadingOverlayMixin {
 	
 	@Inject(method = "render", at = @At("HEAD"))
 	public void render2(CallbackInfo ci) {
-		if(Configs.REMOVE_SPLASH_FADE) {
+		if(ModConfig.INSTANCE.removeSplashFade) {
 			if (this.fadeOutStart > 1) {
 				this.minecraft.setOverlay(null); // Only remove the overlay when it's unnecessary
 			}
@@ -38,14 +38,14 @@ public class LoadingOverlayMixin {
 	
 	@ModifyVariable(method = "replaceAlpha", at = @At("HEAD"), ordinal = 1, argsOnly = true)
 	private static int alpha(int value) {
-		if(Configs.REMOVE_SPLASH_FADE) {
+		if(ModConfig.INSTANCE.removeSplashFade) {
 			return 255; // This method gets called for determining background color transparency
 		} else return value;
 	}
 
 	@ModifyVariable(method = "render", at = @At("STORE"), ordinal = 3)
 	private float o(float value) {
-		if(Configs.REMOVE_SPLASH_FADE) {
+		if(ModConfig.INSTANCE.removeSplashFade) {
 			return 1.0f; // This parameter is used for the Mojang logo transparency
 		} else return value;
 	}
