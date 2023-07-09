@@ -25,6 +25,12 @@ Fabric mod to remove intrusive or distracting transition effects.
 - Toast notification slide in/slide out
   - The associated "whoosh" sound effect
 
+## Dependencies
+
+- [Fabric API](https://modrinth.com/mod/fabric-api/versions?c=release)
+- [Cloth Config API](https://modrinth.com/mod/cloth-config/versions?l=fabric&c=release)
+- [Mod Menu (Optional)](https://modrinth.com/mod/modmenu/versions?c=release)
+
 ### Links
 
 - Modrinth: https://modrinth.com/mod/skip-transitions
