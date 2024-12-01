@@ -1,4 +1,4 @@
-package com.trufflez.skiptransitions.config;
+package com.javachef.skiptransitions.config;
 
 import com.mojang.datafixers.util.Pair;
 

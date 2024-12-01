@@ -5,7 +5,7 @@
   "name": "Skip Transitions",
   "description": "Removes transitions when starting, changing resources, and more",
   "authors": [
-    "TrufflezMC"
+    "JavaChef"
   ],
   "contact": {
     "homepage": "https://github.com/javachefmc/skip-transitions/",
@@ -17,7 +17,7 @@
   "environment": "client",
   "entrypoints": {
     "client": [
-      "com.trufflez.skiptransitions.SkipTransitions"
+      "com.javachef.skiptransitions.SkipTransitions"
     ]
   },
   "mixins": [

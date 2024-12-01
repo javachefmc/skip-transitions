@@ -1,4 +1,4 @@
-package com.trufflez.skiptransitions.config;
+package com.javachef.skiptransitions.config;
 
 /*
  * Copyright (c) 2021 magistermaks

@@ -1,6 +1,6 @@
-package com.trufflez.skiptransitions;
+package com.javachef.skiptransitions;
 
-import com.trufflez.skiptransitions.config.Configs;
+import com.javachef.skiptransitions.config.Configs;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;

@@ -1,4 +1,4 @@
-package com.trufflez.skiptransitions.config;
+package com.javachef.skiptransitions.config;
 
 import com.mojang.datafixers.util.Pair;
 
@@ -21,7 +21,7 @@ public class Configs {
     }
 
     private static void createConfigs() {
-        configs.append("\n# Skip Transitions\n# by TrufflezMC\n");
+        configs.append("\n# Skip Transitions\n# by JavaChef\n");
         configs.append("\n# Remove fade animations on the title screen (default=true)");
         configs.addKeyValuePair(new Pair<>("removeTitleScreenFade", true));
         configs.append("\n# Remove fade animation for Mojang logo when applying resourcepack changes (default=true)");

@@ -1,6 +1,6 @@
-package com.trufflez.skiptransitions.mixin;
+package com.javachef.skiptransitions.mixin;
 
-import com.trufflez.skiptransitions.config.Configs;
+import com.javachef.skiptransitions.config.Configs;
 import net.minecraft.client.sounds.SoundManager;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;

@@ -1,12 +1,12 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.trufflez.skiptransitions.mixin",
+  "package": "com.javachef.skiptransitions.mixin",
   "compatibilityLevel": "JAVA_21",
   "client": [
     "LoadingOverlayMixin",
     "TitleScreenMixin",
-    "ToastComponentMixin",
+    "ToastManagerMixin",
     "ToastMixin"
   ],
   "injectors": {
